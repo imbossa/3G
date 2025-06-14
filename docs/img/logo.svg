@@ -1,0 +1,69 @@
+<svg viewBox="0 0 1280 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- 左侧gopher主圆背景 -->
+    <ellipse cx="320" cy="320" rx="140" ry="140" fill="url(#gopher-bg)" stroke="#5AC3E3" stroke-width="6"/>
+    <defs>
+        <linearGradient id="gopher-bg" x1="180" y1="180" x2="460" y2="480" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#7FD5EA"/>
+            <stop offset="1" stop-color="#4AC0D7"/>
+        </linearGradient>
+    </defs>
+    <!-- gopher本体 -->
+    <ellipse cx="320" cy="325" rx="105" ry="105" fill="white" stroke="#140D0D" stroke-width="6"/>
+    <!-- 左眼 -->
+    <ellipse cx="275" cy="320" rx="20" ry="22" fill="white" stroke="#140D0D" stroke-width="5"/>
+    <ellipse cx="275" cy="324" rx="9" ry="10" fill="#140D0D"/>
+    <!-- 右眼 -->
+    <ellipse cx="365" cy="320" rx="20" ry="22" fill="white" stroke="#140D0D" stroke-width="5"/>
+    <ellipse cx="365" cy="324" rx="9" ry="10" fill="#140D0D"/>
+    <!-- 鼻子 -->
+    <ellipse cx="320" cy="345" rx="13" ry="8" fill="#140D0D"/>
+    <!-- 微笑嘴巴 -->
+    <path d="M302 362 Q320 378 338 362" stroke="#140D0D" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <!-- 两颗门牙 -->
+    <rect x="314" y="355" width="5" height="13" rx="2" fill="#fff" stroke="#140D0D" stroke-width="2"/>
+    <rect x="321" y="355" width="5" height="13" rx="2" fill="#fff" stroke="#140D0D" stroke-width="2"/>
+    <!-- 腮红 -->
+    <ellipse cx="290" cy="351" rx="7" ry="4" fill="#F28CA3" opacity="0.7"/>
+    <ellipse cx="350" cy="351" rx="7" ry="4" fill="#F28CA3" opacity="0.7"/>
+    <!-- 小手 -->
+    <ellipse cx="265" cy="370" rx="13" ry="7" fill="#7FD5EA" stroke="#140D0D" stroke-width="3"/>
+    <ellipse cx="375" cy="370" rx="13" ry="7" fill="#7FD5EA" stroke="#140D0D" stroke-width="3"/>
+    <!-- 小脚 -->
+    <ellipse cx="290" cy="415" rx="11" ry="6" fill="#7FD5EA" stroke="#140D0D" stroke-width="3"/>
+    <ellipse cx="350" cy="415" rx="11" ry="6" fill="#7FD5EA" stroke="#140D0D" stroke-width="3"/>
+    <!-- 头顶3G天线（左） -->
+    <rect x="255" y="205" width="8" height="40" rx="4" fill="#58BFD9"/>
+    <circle cx="259" cy="203" r="9" fill="#fff" stroke="#58BFD9" stroke-width="4"/>
+    <!-- 头顶3G天线（右） -->
+    <rect x="377" y="205" width="8" height="40" rx="4" fill="#58BFD9"/>
+    <circle cx="381" cy="203" r="9" fill="#fff" stroke="#58BFD9" stroke-width="4"/>
+
+    <!-- 右侧3G和Golang+Gin+Gorm紧凑排布 -->
+    <g>
+        <!-- 计算logo中心高度，logo垂直范围185~465,中心325，高度280 -->
+        <!-- 让右侧整体高度=logo高度280，文字上下各靠近边缘 -->
+        <!-- 3G -->
+        <text x="1060" y="260"
+              text-anchor="end"
+              font-size="110"
+              font-family="Arial Black,Arial,sans-serif"
+              fill="#58BFD9"
+              stroke="#140D0D"
+              stroke-width="4"
+              letter-spacing="10"
+              style="font-weight:bold;">
+            3G
+        </text>
+        <!-- Golang + Gin + Gorm，紧挨3G下方约48像素，整体高度与logo高度接近 -->
+        <text x="1200" y="390"
+              text-anchor="end"
+              font-size="54"
+              font-family="Arial Black,Arial,sans-serif"
+              fill="#58BFD9"
+              stroke="#140D0D"
+              stroke-width="2"
+              style="font-weight:bold; letter-spacing:2px;">
+            Golang + Gin + Gorm
+        </text>
+    </g>
+</svg>
